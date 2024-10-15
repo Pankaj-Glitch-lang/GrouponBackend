@@ -3,7 +3,8 @@ const mongoose=require('mongoose');
 const ProductRouter = require('./router/product.route');
 const cors=require('cors');
 const UserRouter = require('./router/user.route');
-
+const dotenv = require('dotenv');
+dotenv.config();
 const router = require('./router/cart.routes');
 const uri =process.env.mongodb_uri;
 const PORT=process.env.PORT
